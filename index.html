@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microtech Engineering - Automobile Parts Manufacturing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Microtech Engineering</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#technology" class="nav-link">Technology</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#clients" class="nav-link">Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-form" class="nav-link">Get Quote</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Precision Engineering for Automotive Excellence</h1>
+                <p class="hero-subtitle">Manufacturing high-quality automobile parts with cutting-edge technology and unmatched precision since 1995</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore Products</a>
+                    <a href="#contact" class="btn btn-secondary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-subtitle">Discover our range of precision-engineered automobile parts</p>
+            </div>
+            
+            <div class="products-slider">
+                <div class="slider-container">
+                    <div class="product-slide active">
+                        <div class="product-content">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Engine Components" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3>Engine Components</h3>
+                                <p>High-performance engine parts including pistons, valves, and cylinder heads manufactured with precision CNC machining.</p>
+                                <ul>
+                                    <li>Aluminum alloy pistons</li>
+                                    <li>Stainless steel valves</li>
+                                    <li>Cast iron cylinder heads</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-content">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=400&fit=crop" alt="Brake Systems" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3>Brake Systems</h3>
+                                <p>Advanced braking components ensuring safety and reliability for various automobile applications.</p>
+                                <ul>
+                                    <li>Disc brake rotors</li>
+                                    <li>Brake calipers</li>
+                                    <li>ABS components</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-content">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&h=400&fit=crop" alt="Transmission Parts" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3>Transmission Parts</h3>
+                                <p>Precision-engineered transmission components for smooth power delivery and enhanced performance.</p>
+                                <ul>
+                                    <li>Gear assemblies</li>
+                                    <li>Clutch systems</li>
+                                    <li>Drive shafts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-content">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" alt="Suspension Components" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3>Suspension Components</h3>
+                                <p>High-quality suspension parts designed for comfort, stability, and superior handling performance.</p>
+                                <ul>
+                                    <li>Shock absorbers</li>
+                                    <li>Coil springs</li>
+                                    <li>Control arms</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology-section">
+        <div class="tech-background"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Advanced Technology & Machinery</h2>
+                <p class="section-subtitle">State-of-the-art equipment and modern manufacturing processes</p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>CNC Machining Centers</h3>
+                    <p>5-axis CNC machines for precision manufacturing with tolerances up to ±0.001mm</p>
+                    <div class="tech-features">
+                        <span>Fanuc Control Systems</span>
+                        <span>Automated Tool Changes</span>
+                        <span>Real-time Monitoring</span>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Robotic Automation</h3>
+                    <p>Advanced robotic systems for consistent quality and increased production efficiency</p>
+                    <div class="tech-features">
+                        <span>ABB Robotic Arms</span>
+                        <span>Vision Systems</span>
+                        <span>Collaborative Robots</span>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Quality Control</h3>
+                    <p>Comprehensive testing and inspection using advanced metrology equipment</p>
+                    <div class="tech-features">
+                        <span>CMM Inspection</span>
+                        <span>3D Scanning</span>
+                        <span>Material Testing</span>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Material Science</h3>
+                    <p>Advanced metallurgy and surface treatment technologies for enhanced durability</p>
+                    <div class="tech-features">
+                        <span>Heat Treatment</span>
+                        <span>Surface Coating</span>
+                        <span>Alloy Development</span>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>3D Printing</h3>
+                    <p>Rapid prototyping and small-batch production using additive manufacturing</p>
+                    <div class="tech-features">
+                        <span>Metal 3D Printing</span>
+                        <span>Rapid Prototyping</span>
+                        <span>Custom Tooling</span>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>ISO Certified</h3>
+                    <p>ISO 9001:2015 and TS 16949 certified manufacturing processes</p>
+                    <div class="tech-features">
+                        <span>Quality Management</span>
+                        <span>Process Control</span>
+                        <span>Continuous Improvement</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2 class="section-title">About Microtech Engineering</h2>
+                        <p class="section-subtitle">Three decades of excellence in automotive manufacturing</p>
+                    </div>
+                    
+                    <div class="about-story">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">1995</div>
+                                <div class="timeline-content">
+                                    <h3>Foundation</h3>
+                                    <p>Microtech Engineering was founded with a vision to revolutionize automobile parts manufacturing through precision engineering and innovative technology.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-year">2005</div>
+                                <div class="timeline-content">
+                                    <h3>Expansion</h3>
+                                    <p>Expanded operations with state-of-the-art CNC machining centers and achieved ISO 9001 certification for quality management systems.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-year">2015</div>
+                                <div class="timeline-content">
+                                    <h3>Innovation</h3>
+                                    <p>Introduced robotic automation and advanced quality control systems, becoming a preferred supplier for major automotive manufacturers.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-year">2025</div>
+                                <div class="timeline-content">
+                                    <h3>Future Ready</h3>
+                                    <p>Leading the industry with Industry 4.0 technologies, sustainable manufacturing practices, and global supply chain capabilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="30">0</div>
+                            <div class="stat-label">Years of Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">Products Manufactured</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Global Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="99">0</div>
+                            <div class="stat-label">Quality Score %</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=600&fit=crop" alt="Manufacturing Facility" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos Section -->
+    <section id="clients" class="clients-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted by Industry Leaders</h2>
+                <p class="section-subtitle">We're proud to partner with some of the world's leading automotive manufacturers</p>
+            </div>
+            
+            <div class="clients-slider">
+                <div class="clients-track" id="clientsTrack">
+                    <!-- First set of logos -->
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/Toyota-Logo.png" alt="Toyota" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/Ford-Logo.png" alt="Ford" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/BMW-Logo.png" alt="BMW" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/Mercedes-Benz-Logo.png" alt="Mercedes-Benz" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/Audi-Logo.png" alt="Audi" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/Honda-Logo.png" alt="Honda" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/04/Hyundai-Logo.png" alt="Hyundai" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/Nissan-Logo.png" alt="Nissan" loading="lazy">
+                    </div>
+                    
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/Toyota-Logo.png" alt="Toyota" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/Ford-Logo.png" alt="Ford" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/BMW-Logo.png" alt="BMW" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/Mercedes-Benz-Logo.png" alt="Mercedes-Benz" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/Audi-Logo.png" alt="Audi" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/Honda-Logo.png" alt="Honda" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/04/Hyundai-Logo.png" alt="Hyundai" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/03/Nissan-Logo.png" alt="Nissan" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clients-stats">
+                <div class="stat-group">
+                    <div class="client-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>100+</h4>
+                            <p>Global Partners</p>
+                        </div>
+                    </div>
+                    <div class="client-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>25+</h4>
+                            <p>Countries Served</p>
+                        </div>
+                    </div>
+                    <div class="client-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>99%</h4>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                    <div class="client-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>15+</h4>
+                            <p>Years Partnership Avg.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a question or need a custom quote? We'd love to hear from you!</p>
+            </div>
+            
+            <div class="contact-form-container">
+                <div class="contact-form-content">
+                    <div class="contact-info">
+                        <h3>Let's Start a Conversation</h3>
+                        <p>Whether you need precision parts, have technical questions, or want to discuss your manufacturing requirements, our team is here to help.</p>
+                        
+                        <div class="contact-features">
+                            <div class="contact-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Quick Response</h4>
+                                    <p>We respond to all inquiries within 24 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Expert Consultation</h4>
+                                    <p>Connect with our engineering specialists</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Custom Quotes</h4>
+                                    <p>Receive detailed proposals for your projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contactForm" class="form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="quote">Request Quote</option>
+                                    <option value="technical">Technical Inquiry</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="support">Customer Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Please describe your requirements or inquiry in detail..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for industry updates and product announcements
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Sending...
+                                </span>
+                            </button>
+                        </form>
+                        
+                        <div class="form-success" id="formSuccess">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Microtech Engineering</h3>
+                    <p>Leading manufacturer of precision automobile parts with over 30 years of industry experience.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>123 Industrial Avenue</p>
+                            <p>Manufacturing District, City 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@microtechengineering.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <div class="hours-item">
+                        <span>Monday - Friday:</span>
+                        <span>8:00 AM - 6:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Saturday:</span>
+                        <span>9:00 AM - 4:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Sunday:</span>
+                        <span>Closed</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Microtech Engineering. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Quality Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
