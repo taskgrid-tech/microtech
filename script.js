@@ -616,3 +616,26 @@ function simulateFormSubmission() {
         }, 2000);
     });
 }
+
+// Scroll-triggered video autoplay/pause
+function initScrollVideos() {
+  const videos = document.querySelectorAll('.tech-video');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+      const wrapper = video.closest('.tech-video-wrapper');
+      if (entry.isIntersecting) {
+        wrapper.classList.add('visible');
+        if (video.paused) {
+          video.play().catch(err => console.warn('Autoplay blocked:', err));
+        }
+      } else {
+        if (!video.paused) {
+          video.pause();
+        }
+      }
+    });
+  }, { threshold: 0.5 });
+  videos.forEach(video => observer.observe(video));
+}
+document.addEventListener('DOMContentLoaded', initScrollVideos);
